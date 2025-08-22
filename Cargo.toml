@@ -1,0 +1,19 @@
+[package]
+name = "time_it"
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/orph3usLyre/time_it"
+authors = ["orph3uslyre <orph3uslyre@protonmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "A Rust proc macro that creates execution timing events for annotated functions via the tracing library"
+categories = ["development-tools::debugging"]
+keywords = ["logging", "debugging", "macros"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+strum = { version = "0.27.1", features = ["derive"] }
+syn = { version = "2.0", features = ["full", "extra-traits"] }
